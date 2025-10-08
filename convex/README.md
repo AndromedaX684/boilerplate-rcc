@@ -80,7 +80,7 @@ function handleButtonPress() {
   // OR
   // use the result once the mutation has completed
   mutation({ first: "Hello!", second: "me" }).then((result) =>
-    console.log(result),
+    console.log(result)
   );
 }
 ```
@@ -88,3 +88,7 @@ function handleButtonPress() {
 Use the Convex CLI to push your functions to a deployment. See everything
 the Convex CLI can do by running `npx convex -h` in your project root
 directory. To learn more, launch the docs with `npx convex docs`.
+
+---
+
+It's important to use the useConvexAuth() hook instead of Clerk's useAuth() hook when you need to check whether the user is logged in or not. The useConvexAuth() hook makes sure that the browser has fetched the auth token needed to make authenticated requests to your Convex backend, and that the Convex backend has validated it.
