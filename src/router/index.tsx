@@ -4,6 +4,7 @@ import { useAuth } from "@clerk/clerk-react";
 import HomePage from "@/pages/Home/HomePage";
 import DashboardPage from "@/pages/Dashboard/DashboardPage";
 import NavbarLayout from "@/components/layout/Navbar";
+import NotFoundPage from "@/pages/NotFound/NotFoundPage";
 
 const ProtectedRoute = ({ children }: { children: ReactNode }) => {
   const { isLoaded, isSignedIn } = useAuth();
@@ -28,7 +29,7 @@ export default function AppRouter() {
             </ProtectedRoute>
           }
         />
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
   );

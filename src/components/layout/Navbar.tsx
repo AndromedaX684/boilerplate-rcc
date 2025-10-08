@@ -13,7 +13,7 @@ export default function NavbarLayout() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-50 flex items-center justify-between border-b shadow-md p-4">
+      <header className="sticky top-0 z-50 flex items-center justify-between border-b shadow-md p-3">
         <div className="w-full flex items-center">
           <Unauthenticated>
             <div className="flex w-full items-center">
@@ -51,11 +51,6 @@ export default function NavbarLayout() {
         </div>
       </header>
       <main className="flex flex-1 flex-col gap-6">
-        <Authenticated>
-          <div className="text-foreground">
-            You are signed in. Replace this area with your dashboard content.
-          </div>
-        </Authenticated>
         <Outlet />
       </main>
     </div>
