@@ -5,6 +5,8 @@ type FooterProps = {
 };
 
 function Footer({ className }: FooterProps) {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer
       className={cn(
@@ -12,7 +14,7 @@ function Footer({ className }: FooterProps) {
         className
       )}
     >
-      footer
+      © {currentYear} Your Company. All rights reserved.
     </footer>
   );
 }
