@@ -19,3 +19,32 @@ Boilerplate for React, Typescript, Vite, with React Router (declarative mode), w
 
 [] - run pnpm install
 [] - Update the index.html file with the appropriate information (fav icon, title, etc.)
+
+---
+
+# Basic Project Setup and File Path
+
+```
+src/
+├── components/ # Reusable building blocks
+│ ├── layout/ # Navigation, headers, sidebars, wrappers
+│ └── ui/ # Generic UI elements (Button, Card, Modal, etc.)
+│
+├── features/ # Self-contained, domain-specific modules
+│ └── auth/ # Authentication logic, forms, hooks
+│
+├── pages/ # Route-level pages
+│ ├── Dashboard/ # /dashboard — main user area
+│ │ ├── DashboardPage.tsx
+│ │ └── components/ # Page-specific UI
+│ └── Home/ # / — landing or app entry
+│ ├── HomePage.tsx
+│ └── components/
+│
+├── router/ # Central routing setup
+│ └── index.tsx
+│
+├── App.tsx # Root layout, wraps Router
+├── index.css # Global styles (Tailwind, etc.)
+└── main.tsx # App entry point (React root)
+```
