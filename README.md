@@ -14,3 +14,8 @@ Boilerplate for React, Typescript, Vite, with React Router (declarative mode), w
    b. Combine it with Convex [https://clerk.com/docs/guides/development/integrations/databases/convex]
 
 ---
+
+# Getting Started
+
+[] - run pnpm install
+[] - Update the index.html file with the appropriate information (fav icon, title, etc.)
